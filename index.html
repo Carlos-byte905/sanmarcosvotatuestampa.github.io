@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>San Marcos: Vota tu Estampa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="vota-ya.html">Estampas</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bienvenida">
+      <h1>Bienvenidos a San Marcos: Vota tu Estampa</h1>
+      <p>
+        ¡Bienvenidos a la página oficial de votación para elegir la nueva
+        estampa de las catequesis de la Parroquia de San Marcos en Jerez! Aquí
+        tendrás la oportunidad de participar activamente en la selección de la
+        imagen que nos acompañará en este hermoso camino de formación cristiana.
+        Tu voto es muy importante, ya que juntos elegiremos el diseño que mejor
+        represente la fe, la esperanza y la comunidad que compartimos. ¡Gracias
+        por formar parte de este proyecto y que Dios bendiga tu elección!
+      </p>
+      <a href="#" class="boton-azul">Vota Ya!</a>
+    </div>
+    <main>
+      <main>
+        <div class="contador">
+          <h2>Contador</h2>
+          <p>Estampa Ganadora</p>
+          <span id="horas">00</span>:<span id="minutos">00</span>:<span
+            id="segundos"
+            >00</span
+          >
+        </div>
+      </main>
+    </main>
+    <footer>
+      <p>&copy; 2023 Tu Nombre o Empresa. Todos los derechos reservados.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+      function actualizarContador() {
+        const ahora = new Date();
+        const horas = ahora.getHours().toString().padStart(2, "0");
+        const minutos = ahora.getMinutes().toString().padStart(2, "0");
+        const segundos = ahora.getSeconds().toString().padStart(2, "0");
+
+        document.getElementById("horas").textContent = horas;
+        document.getElementById("minutos").textContent = minutos;
+        document.getElementById("segundos").textContent = segundos;
+      }
+
+      // Actualizar el contador cada segundo
+      setInterval(actualizarContador, 1000);
+    </script>
+  </body>
+</html>
 
