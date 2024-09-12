@@ -1,0 +1,113 @@
+body {
+  background-color: #f0f8ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  display: flex; /* Establecemos un contenedor flex para el body */
+  flex-direction: column; /* Organizamos los elementos en una columna */
+  min-height: 100vh; /* Aseguramos que el body ocupe al menos la altura de la viewport */
+}
+
+header {
+  background-color: azure;
+  padding: 30px;
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Organiza los elementos en una línea horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav li {
+  margin: 0 10px; /* Añade un margen entre los elementos */
+}
+
+nav a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #000000; /* Cambia el color del texto */
+  padding: 10px; /* Añade un poco de espacio alrededor del texto */
+  border-radius: 5px; /* Redondea las esquinas */
+  margin: 5px;
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bienvenida {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.bienvenida h1 {
+  color: #cd2020;
+  font: bold;
+  font-size: 50px;
+}
+
+.bienvenida p {
+  color: #000000;
+  font-size: 15px;
+  margin: 40px;
+}
+
+.boton-azul {
+  background-color: #007bff; /* Azul claro */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin: 15px;
+}
+
+.boton-azul:hover   {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+  flex: 1; /* El contenido principal ocupará todo el espacio disponible */
+  margin: 20px;
+}
+
+.contador {
+  font-size: 2em;
+  text-align: center;
+  background-color: #0056b3;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #f0ffff; /* Color azul claro (azure) */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+footer   a {
+  color: #333;
+  text-decoration: none;
+}
